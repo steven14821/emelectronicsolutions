@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E&amp;M Electronic Solutions SAS — Servicio Técnico Autorizado Samsung</title>
+  <meta name="description" content="Centro autorizado Samsung en Cúcuta y Bucaramanga. Instalación, mantenimiento, reparación y venta de repuestos originales." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="em-landing.css" />
+</head>
+<body class="em-site">
+
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="#inicio"><img src="logo-transparent.png" alt="E&M Electronic Solutions" class="nav-logo-img"></a>
+    <div class="nav-pill-container" id="navPillContainer">
+      <ul class="nav-menu" id="navPillMenu">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#sedes">Sedes</a></li>
+        <li><a href="#contacto" class="nav-cta">Contáctanos</a></li>
+      </ul>
+      <button class="nav-pill-toggle" id="navPillToggle" aria-label="Expandir menú"><i class="ri-menu-line"></i></button>
+    </div>
+    <button class="nav-mobile-toggle" id="navToggle" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-drawer" id="navDrawer">
+  <div class="nav-drawer-panel">
+    <a href="#servicios"><i class="ri-tools-line"></i> Servicios</a>
+    <a href="#nosotros"><i class="ri-team-line"></i> Nosotros</a>
+    <a href="#galeria"><i class="ri-image-line"></i> Galería</a>
+    <a href="#productos"><i class="ri-shopping-bag-line"></i> Productos</a>
+    <a href="#sedes"><i class="ri-map-pin-line"></i> Sedes</a>
+    <a href="#contacto" class="drawer-cta"><i class="ri-whatsapp-line"></i> Contáctanos</a>
+  </div>
+</div>
+<section class="hero" id="inicio">
+  <div class="hero-particles" aria-hidden="true">
+    <span class="hero-particle"></span><span class="hero-particle"></span><span class="hero-particle"></span><span class="hero-particle"></span><span class="hero-particle"></span>
+    <span class="hero-particle"></span><span class="hero-particle"></span><span class="hero-particle"></span><span class="hero-particle"></span><span class="hero-particle"></span>
+    <span class="hero-particle"></span><span class="hero-particle"></span><span class="hero-particle"></span><span class="hero-particle"></span><span class="hero-particle"></span>
+  </div>
+  <div class="hero-deco-1"></div><div class="hero-deco-2"></div><div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-chip"><span class="ci"><i class="ri-check-line"></i></span>Centro Autorizado</div>
+      <h1>
+        <span class="h1-lead">Tu hogar merece el mejor</span>
+        <span class="hero-word-rotator" id="heroWordRotator">
+          <span class="hero-word active">servicio técnico</span>
+          <span class="hero-word">soporte</span>
+          <span class="hero-word">mantenimiento</span>
+          <span class="hero-word">cuidado</span>
+        </span>
+      </h1>
+      <p class="hero-subtitle">Instalación, mantenimiento, reparación y venta de repuestos originales. Más de una década de experiencia en Santander y Norte de Santander.</p>
+      <div class="hero-brand-face">
+        <div class="hero-brand-avatar">
+          <img src="mascota-avatar.png" alt="" aria-hidden="true">
+        </div>
+        <div class="hero-brand-bubble">
+          <strong>Asi te acompana E&amp;M</strong>
+          <span>Te acompana desde el primer contacto hasta el mantenimiento de tus equipos.</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="https://api.whatsapp.com/send?phone=573142873886" target="_blank" class="btn btn-blue"><i class="ri-whatsapp-line"></i> Agenda tu servicio</a>
+        <a href="#servicios" class="btn btn-outline">Conoce más <i class="ri-arrow-right-line"></i></a>
+      </div>
+      <div class="hero-trust">
+        <div class="hero-trust-item"><span class="trust-icon"><i class="ri-shield-check-line"></i></span>Garantía en servicio</div>
+        <div class="hero-trust-item"><span class="trust-icon"><i class="ri-home-4-line"></i></span>Servicio a domicilio</div>
+        <div class="hero-trust-item"><span class="trust-icon"><i class="ri-flashlight-line"></i></span>Atención rápida</div>
+      </div>
+    </div>
+    <!-- CARRUSEL ─ versión responsive corregida -->
+    <div class="hero-carousel">
+      <div class="hero-carousel-frame">
+        <div class="hero-slides" id="heroSlides">
+
+          <div class="hero-slide">
+            <div class="hero-slide-bg slide-bg-1">
+              <!-- TODO: <img src="assets/slides/instalacion.jpg" alt="Instalación"> -->
+              <div class="slide-img-placeholder"><i class="ri-image-add-line"></i><span>IMAGEN — Instalación</span></div>
+            </div>
+            <div class="hero-slide-content">
+              <span class="slide-tag">Instalación</span>
+              <h3>Instalación Profesional</h3>
+              <p>Asesoría completa para la instalación de tu electrodoméstico Samsung.</p>
+            </div>
+          </div>
+
+          <div class="hero-slide">
+            <div class="hero-slide-bg slide-bg-2">
+              <!-- TODO: <img src="assets/slides/reparacion.jpg" alt="Reparación"> -->
+              <div class="slide-img-placeholder"><i class="ri-image-add-line"></i><span>IMAGEN — Reparación</span></div>
+            </div>
+            <div class="hero-slide-content">
+              <span class="slide-tag">Reparación</span>
+              <h3>Reparación Experta</h3>
+              <p>Técnicos certificados con garantía en el servicio.</p>
+            </div>
+          </div>
+
+          <div class="hero-slide">
+            <div class="hero-slide-bg slide-bg-3">
+              <!-- TODO: <img src="assets/slides/mantenimiento.jpg" alt="Mantenimiento"> -->
+              <div class="slide-img-placeholder"><i class="ri-image-add-line"></i><span>IMAGEN — Mantenimiento</span></div>
+            </div>
+            <div class="hero-slide-content">
+              <span class="slide-tag">Mantenimiento</span>
+              <h3>Mantenimiento Preventivo</h3>
+              <p>Limpieza profesional a domicilio para alargar la vida útil de tus equipos.</p>
+            </div>
+          </div>
+
+          <div class="hero-slide">
+            <div class="hero-slide-bg slide-bg-4">
+              <!-- TODO: <img src="assets/slides/repuestos.jpg" alt="Repuestos"> -->
+              <div class="slide-img-placeholder"><i class="ri-image-add-line"></i><span>IMAGEN — Repuestos</span></div>
+            </div>
+            <div class="hero-slide-content">
+              <span class="slide-tag">Repuestos</span>
+              <h3>Repuestos Originales</h3>
+              <p>Partes originales Samsung con garantía del fabricante.</p>
+            </div>
+          </div>
+
+        </div><!-- /hero-slides -->
+      </div><!-- /hero-carousel-frame -->
+
+      <div class="carousel-dots" id="carouselDots">
+        <button class="cdot active" data-slide="0"></button>
+        <button class="cdot" data-slide="1"></button>
+        <button class="cdot" data-slide="2"></button>
+        <button class="cdot" data-slide="3"></button>
+      </div>
+    </div><!-- /hero-carousel -->
+  </div>
+</section>
+<section class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="stat-block"><div class="stat-num" data-target="10000">0<span>+</span></div><div class="stat-desc">Clientes satisfechos</div></div>
+    <div class="stat-block"><div class="stat-num" data-target="30000">0<span>+</span></div><div class="stat-desc">Reparaciones</div></div>
+    <div class="stat-block"><div class="stat-num" data-target="11000">0<span>+</span></div><div class="stat-desc">Instalaciones</div></div>
+  </div>
+</section>
+<section class="section" id="servicios">
+  <div style="max-width:1240px;margin:0 auto"><div class="section-head centered reveal"><div class="section-eyebrow">Nuestros Servicios</div><h2 class="section-title">Soluciones integrales para tus electrodomésticos</h2><p class="section-subtitle">Desde la instalación hasta el mantenimiento preventivo. Tu tranquilidad es nuestra prioridad.</p></div></div>
+  <div class="services-layout">
+    <div class="service-card reveal"><span class="service-card-number">01</span><div class="service-card-icon sci-blue"><i class="ri-plug-line"></i></div><h3>Instalación Inicial</h3><p>Inspección del lugar y asesoría completa. Gratuito para productos Samsung nuevos con factura.</p></div>
+    <div class="service-card reveal"><span class="service-card-number">02</span><div class="service-card-icon sci-amber"><i class="ri-tools-line"></i></div><h3>Soporte Técnico</h3><p>Personal profesional con herramienta calificada. Servicio a domicilio para electrodomésticos de gran tamaño.</p></div>
+    <div class="service-card reveal"><span class="service-card-number">03</span><div class="service-card-icon sci-green"><i class="ri-brush-2-line"></i></div><h3>Mantenimiento Preventivo</h3><p>Limpieza periódica para nevecon, lavadora, secadora y aire acondicionado. Sin retirar el equipo.</p></div>
+    <div class="service-card reveal"><span class="service-card-number">04</span><div class="service-card-icon sci-navy"><i class="ri-settings-3-line"></i></div><h3>Repuestos Originales</h3><p>Cotización y venta de repuestos originales. Entrega personal o a domicilio con instalación.</p></div>
+  </div>
+</section>
+<section class="section section-alt" id="nosotros">
+  <div class="about-layout">
+    <div class="about-visual-mosaic reveal">
+      <div class="mosaic-card mc-1"><div class="mosaic-card-icon"><i class="ri-temp-cold-line"></i></div><h4>Refrigeración</h4><p>Nevecon, neveras y sistemas de enfriamiento</p></div>
+      <div class="mosaic-card mc-2"><div class="mosaic-card-icon"><i class="ri-t-shirt-line"></i></div><h4>Lavado</h4><p>Lavadoras, secadoras y centros de lavado</p></div>
+      <div class="mosaic-card mc-3"><div class="mosaic-card-icon"><i class="ri-windy-line"></i></div><h4>Climatización</h4><p>Aires acondicionados y ventilación</p></div>
+      <div class="mosaic-card mc-4"><div class="mosaic-card-icon"><i class="ri-tv-line"></i></div><h4>Audio y Video</h4><p>Televisores y entretenimiento</p></div>
+    </div>
+    <div class="about-content reveal">
+      <div class="section-head"><div class="section-eyebrow">Sobre Nosotros</div><h2 class="section-title">Más de una década cuidando tu hogar</h2></div>
+      <!-- ESPACIO MASCOTA: reemplaza el div por <img src="mascota-cutout.png" alt="Mascota E&M" style="max-height:200px;margin-bottom:1.5rem;display:block"> -->
+      <div class="em-mascota-wrap">
+        <img src="mascota-cutout.png" alt="Mascota E&M" class="em-mascota-img">
+      </div>
+      <p class="about-text">E&amp;M Electronic Solutions S.A.S es una empresa colombiana con presencia en Norte de Santander y Santander. Técnicos e ingenieros calificados en todas las líneas de electrodomésticos.</p>
+      <div class="feature-list">
+        <div class="feature-item"><div class="feature-check"><i class="ri-check-line"></i></div><div><h4>Garantía comprobable</h4><p>Respaldamos cada trabajo realizado.</p></div></div>
+        <div class="feature-item"><div class="feature-check"><i class="ri-check-line"></i></div><div><h4>Centro Autorizado Samsung</h4><p>Repuestos originales y procesos certificados.</p></div></div>
+        <div class="feature-item"><div class="feature-check"><i class="ri-check-line"></i></div><div><h4>Cobertura regional</h4><p>Cúcuta, Bucaramanga y municipios aledaños.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="galeria">
+  <div style="max-width:1240px;margin:0 auto"><div class="section-head centered reveal"><div class="section-eyebrow">Galería</div><h2 class="section-title">Nuestro trabajo habla por nosotros</h2><p class="section-subtitle">Cada servicio realizado con la máxima calidad y profesionalismo.</p></div></div>
+  <div class="bento reveal">
+    <div class="bento-cell b1"><div class="bento-bg bb-1"><div class="bento-img-placeholder"><i class="ri-image-add-line"></i><span class="pip-label">IMAGEN — Instalación Nevecon</span></div></div><div class="bento-info"><h4>Instalación de Nevecon</h4><p>Samsung — Servicio certificado</p></div></div>
+    <div class="bento-cell b2"><div class="bento-bg bb-2"><div class="bento-img-placeholder"><i class="ri-image-add-line"></i><span class="pip-label">IMAGEN — Reparación</span></div></div><div class="bento-info"><h4>Reparación a Domicilio</h4><p>Diagnóstico y solución en el acto</p></div></div>
+    <div class="bento-cell b3"><div class="bento-bg bb-3"><div class="bento-img-placeholder"><i class="ri-image-add-line"></i><span class="pip-label">IMAGEN — Equipo Técnico</span></div></div><div class="bento-info"><h4>Equipo Técnico</h4><p>Personal certificado</p></div></div>
+    <div class="bento-cell b4"><div class="bento-bg bb-4"><div class="bento-img-placeholder"><i class="ri-image-add-line"></i><span class="pip-label">IMAGEN — Mantenimiento</span></div></div><div class="bento-info"><h4>Mantenimiento Completo</h4><p>Limpieza profunda sin retirar el equipo</p></div></div>
+    <div class="bento-cell b5"><div class="bento-bg bb-5"><div class="bento-img-placeholder"><i class="ri-image-add-line"></i><span class="pip-label">IMAGEN — Herramientas</span></div></div><div class="bento-info"><h4>Herramientas Profesionales</h4><p>Equipos de última generación</p></div></div>
+    <div class="bento-cell b6"><div class="bento-bg bb-6"><div class="bento-img-placeholder"><i class="ri-image-add-line"></i><span class="pip-label">IMAGEN — Repuestos</span></div></div><div class="bento-info"><h4>Repuestos Originales</h4><p>Directamente de fábrica Samsung</p></div></div>
+  </div>
+</section>
+<section class="section section-alt" id="resultados">
+  <div class="ba-layout">
+    <div class="reveal">
+      <div class="section-head"><div class="section-eyebrow">Resultados</div><h2 class="section-title">Mira la diferencia que hacemos</h2></div>
+      <div class="ba-text-block"><h3><i class="ri-arrow-left-right-line"></i> Arrastra para comparar</h3><p>Cada servicio de reparación o mantenimiento transforma tus electrodomésticos.</p><p style="margin-bottom:1.5rem"></p><a href="#contacto" class="btn btn-blue btn-sm"><i class="ri-calendar-check-line"></i> Solicitar servicio</a></div>
+    </div>
+    <div class="ba-box reveal" id="baSlider">
+      <div class="ba-tag before">Antes</div><div class="ba-tag after">Después</div>
+      <div class="ba-layer ba-layer-after"><div class="ba-img-placeholder"><i class="ri-image-add-line"></i><span>FOTO — DESPUÉS</span></div></div>
+      <div class="ba-layer ba-layer-before" id="baBefore"><div class="ba-inner"><div class="ba-img-placeholder"><i class="ri-image-add-line"></i><span>FOTO — ANTES</span></div></div></div>
+      <div class="ba-divider" id="baDivider"></div>
+      <div class="ba-knob" id="baKnob"><i class="ri-arrow-left-right-line"></i></div>
+      <div class="ba-mascot-guide" aria-hidden="true">
+        <div class="ba-mascot-note">
+          <strong>Desliza aqui</strong>
+          <span>Compara el antes y el despues del servicio.</span>
+        </div>
+        <img src="mascota-guide.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="productos">
+  <div class="products-wrapper">
+    <div class="section-head centered reveal"><div class="section-eyebrow">Accesorios &amp; Repuestos</div><h2 class="section-title">Todo para el cuidado de tu electrodoméstico</h2><p class="section-subtitle">Selecciona una categoría.</p></div>
+    <div class="prod-tabs reveal">
+      <button class="prod-tab active" data-tab="controles"><i class="ri-remote-control-line"></i> Forros Control</button>
+      <button class="prod-tab" data-tab="lavadoras"><i class="ri-shirt-line"></i> Forros Lavadora</button>
+      <button class="prod-tab" data-tab="filtros"><i class="ri-drop-line"></i> Filtros</button>
+      <button class="prod-tab" data-tab="repuestos"><i class="ri-settings-3-line"></i> Repuestos</button>
+    </div>
+    <div class="prod-panel active reveal" id="panel-controles">
+      <div class="products-grid">
+        <div class="product-card"><div class="product-card-img pci-1"><div class="prod-img-placeholder"><i class="ri-remote-control-line"></i><span class="pip-label">IMAGEN</span></div></div><div class="product-card-body"><h3>Forro Control — Silicona Básica</h3><p>Antideslizante y resistente al agua.</p><div class="prod-variants"><span class="prod-variant">Negro</span><span class="prod-variant">Transparente</span><span class="prod-variant">Azul</span></div><a href="https://api.whatsapp.com/send?phone=573142873886&text=Forro%20control%20básico" target="_blank" class="btn btn-wa btn-sm"><i class="ri-whatsapp-line"></i> Pedir</a></div></div>
+        <div class="product-card"><div class="product-card-img pci-2"><div class="prod-img-placeholder"><i class="ri-remote-control-line"></i><span class="pip-label">IMAGEN</span></div></div><div class="product-card-body"><h3>Forro Control — Luminoso</h3><p>Brilla en la oscuridad.</p><div class="prod-variants"><span class="prod-variant">Verde noche</span><span class="prod-variant">Azul noche</span></div><a href="https://api.whatsapp.com/send?phone=573142873886&text=Forro%20control%20luminoso" target="_blank" class="btn btn-wa btn-sm"><i class="ri-whatsapp-line"></i> Pedir</a></div></div>
+        <div class="product-card"><div class="product-card-img pci-4"><div class="prod-img-placeholder"><i class="ri-remote-control-line"></i><span class="pip-label">IMAGEN</span></div></div><div class="product-card-body"><h3>Forro Control — Premium</h3><p>Acabado mate para Samsung Smart TV.</p><div class="prod-variants"><span class="prod-variant">Negro mate</span><span class="prod-variant">Gris plata</span></div><a href="https://api.whatsapp.com/send?phone=573142873886&text=Forro%20control%20premium" target="_blank" class="btn btn-wa btn-sm"><i class="ri-whatsapp-line"></i> Pedir</a></div></div>
+      </div>
+    </div>
+    <div class="prod-panel" id="panel-lavadoras">
+      <div class="products-grid cols-2">
+        <div class="product-card"><div class="product-card-img pci-3"><div class="prod-img-placeholder"><i class="ri-shirt-line"></i><span class="pip-label">IMAGEN</span></div></div><div class="product-card-body"><h3>Forro Lavadora — Estándar</h3><p>Textil impermeable de alta resistencia.</p><div class="prod-variants"><span class="prod-variant">7 kg</span><span class="prod-variant">10 kg</span><span class="prod-variant">14 kg</span><span class="prod-variant">A medida</span></div><a href="https://api.whatsapp.com/send?phone=573142873886&text=Forro%20lavadora%20estándar" target="_blank" class="btn btn-wa btn-sm"><i class="ri-whatsapp-line"></i> Pedir</a></div></div>
+        <div class="product-card"><div class="product-card-img pci-1"><div class="prod-img-placeholder"><i class="ri-shirt-line"></i><span class="pip-label">IMAGEN</span></div></div><div class="product-card-body"><h3>Forro Lavadora — Con Panel Digital</h3><p>Ventana transparente sobre el panel para operarlo sin quitar el forro.</p><div class="prod-variants"><span class="prod-variant">Carga Frontal</span><span class="prod-variant">Carga Superior</span></div><a href="https://api.whatsapp.com/send?phone=573142873886&text=Forro%20lavadora%20panel" target="_blank" class="btn btn-wa btn-sm"><i class="ri-whatsapp-line"></i> Pedir</a></div></div>
+      </div>
+    </div>
+    <div class="prod-panel" id="panel-filtros">
+      <div class="products-grid cols-2">
+        <div class="product-card"><div class="product-card-img pci-3"><div class="prod-img-placeholder"><i class="ri-drop-line"></i><span class="pip-label">IMAGEN</span></div></div><div class="product-card-body"><h3>Filtro de Agua — Samsung</h3><p>Elimina el 99% de contaminantes. Compatible con nevecones Samsung con dispensador.</p><div class="prod-variants"><span class="prod-variant">DA29-00020B</span><span class="prod-variant">DA29-00003G</span></div><a href="https://api.whatsapp.com/send?phone=573142873886&text=Filtro%20agua%20Samsung" target="_blank" class="btn btn-wa btn-sm"><i class="ri-whatsapp-line"></i> Consultar</a></div></div>
+        <div class="product-card"><div class="product-card-img pci-2"><div class="prod-img-placeholder"><i class="ri-drop-line"></i><span class="pip-label">IMAGEN</span></div></div><div class="product-card-body"><h3>Filtro Aire — A/C Samsung</h3><p>Filtros HEPA para aires acondicionados Samsung.</p><div class="prod-variants"><span class="prod-variant">9.000 BTU</span><span class="prod-variant">12.000 BTU</span><span class="prod-variant">18.000 BTU</span></div><a href="https://api.whatsapp.com/send?phone=573142873886&text=Filtro%20A/C%20Samsung" target="_blank" class="btn btn-wa btn-sm"><i class="ri-whatsapp-line"></i> Consultar</a></div></div>
+      </div>
+    </div>
+    <div class="prod-panel" id="panel-repuestos">
+      <div class="repuestos-cta"><div><h3>¿Necesitas un repuesto específico?</h3><p>Cotizamos cualquier repuesto original Samsung.</p></div><div style="display:flex;gap:.8rem;flex-wrap:wrap"><a href="https://api.whatsapp.com/send?phone=573142873886&text=Cotizar%20repuesto%20Samsung" target="_blank" class="btn btn-wa"><i class="ri-whatsapp-line"></i> Cotizar</a><a href="mailto:emelectronicsolutions@gmail.com" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,.3)"><i class="ri-mail-line"></i> Correo</a></div></div>
+      <div class="products-grid" style="margin-top:1.4rem">
+        <div class="product-card"><div class="product-card-img pci-1"><div class="prod-img-placeholder"><i class="ri-temp-cold-line"></i><span class="pip-label">Refrigeración</span></div></div><div class="product-card-body"><h3>Repuestos — Refrigeración</h3><p>Compresor, termostato, evaporador y más.</p><a href="https://api.whatsapp.com/send?phone=573142873886&text=Repuesto%20refrigeración" target="_blank" class="btn btn-blue btn-sm"><i class="ri-whatsapp-line"></i> Cotizar</a></div></div>
+        <div class="product-card"><div class="product-card-img pci-3"><div class="prod-img-placeholder"><i class="ri-t-shirt-line"></i><span class="pip-label">Lavado</span></div></div><div class="product-card-body"><h3>Repuestos — Lavadoras</h3><p>Rodamientos, bombas, tableros y más.</p><a href="https://api.whatsapp.com/send?phone=573142873886&text=Repuesto%20lavadora" target="_blank" class="btn btn-blue btn-sm"><i class="ri-whatsapp-line"></i> Cotizar</a></div></div>
+        <div class="product-card"><div class="product-card-img pci-4"><div class="prod-img-placeholder"><i class="ri-windy-line"></i><span class="pip-label">A/C y TV</span></div></div><div class="product-card-body"><h3>Repuestos — A/C y TV</h3><p>Tarjetas electrónicas, backlights y más.</p><a href="https://api.whatsapp.com/send?phone=573142873886&text=Repuesto%20A/C%20TV" target="_blank" class="btn btn-blue btn-sm"><i class="ri-whatsapp-line"></i> Cotizar</a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="em-testimonials" id="testimonios">
+  <div class="em-t-glow" aria-hidden="true"></div>
+  <div class="em-t-head">
+    <div class="em-t-eyebrow">
+      <span class="em-t-line"></span>
+      Testimonios
+      <span class="em-t-line"></span>
+    </div>
+    <h2 class="em-t-title">Lo que dicen nuestros clientes</h2>
+    <p class="em-t-subtitle">Cúcuta y Bucaramanga confían en E&amp;M para sus equipos Samsung.</p>
+  </div>
+  <div class="em-t-track-wrap">
+    <div class="em-t-fade-l" aria-hidden="true"></div>
+    <div class="em-t-fade-r" aria-hidden="true"></div>
+    <div class="em-t-track">
+      <div class="em-t-card"><div class="em-t-stars">★★★★★</div><p class="em-t-text">“Llevé mi Samsung S23 con la pantalla rota y en pocas horas lo tenía como nuevo. Excelente servicio y precio justo.”</p><div class="em-t-author"><div class="em-t-avatar">CR</div><div><div class="em-t-name">Camila Rodríguez</div><div class="em-t-city">Cúcuta, Colombia</div></div></div></div>
+      <div class="em-t-card"><div class="em-t-stars">★★★★★</div><p class="em-t-text">“Muy profesionales. Me explicaron todo el proceso antes de comenzar la reparación. Total confianza desde el primer momento.”</p><div class="em-t-author"><div class="em-t-avatar">AP</div><div><div class="em-t-name">Andrés Patiño</div><div class="em-t-city">Bucaramanga, Colombia</div></div></div></div>
+      <div class="em-t-card"><div class="em-t-stars">★★★★★</div><p class="em-t-text">“El servicio a domicilio me salvó el día. Vinieron rápido y repararon la batería de mi Galaxy sin ningún problema.”</p><div class="em-t-author"><div class="em-t-avatar">LG</div><div><div class="em-t-name">Laura Gómez</div><div class="em-t-city">Cúcuta, Colombia</div></div></div></div>
+      <div class="em-t-card"><div class="em-t-stars">★★★★★</div><p class="em-t-text">“Centro autorizado Samsung, y se nota. Repuestos originales y garantía real. Recomendado al 100%.”</p><div class="em-t-author"><div class="em-t-avatar">JH</div><div><div class="em-t-name">Jorge Hernández</div><div class="em-t-city">Bucaramanga, Colombia</div></div></div></div>
+      <div class="em-t-card"><div class="em-t-stars">★★★★★</div><p class="em-t-text">“Rapidísimos y muy amables. Mi Tab S8 quedó como recién comprada. Definitivamente volvería.”</p><div class="em-t-author"><div class="em-t-avatar">VM</div><div><div class="em-t-name">Valentina Morales</div><div class="em-t-city">Cúcuta, Colombia</div></div></div></div>
+      <div class="em-t-card"><div class="em-t-stars">★★★★★</div><p class="em-t-text">“Tuve un problema con el puerto de carga y lo resolvieron el mismo día. Sin complicaciones, atención de primera.”</p><div class="em-t-author"><div class="em-t-avatar">MT</div><div><div class="em-t-name">Miguel Ángel Torres</div><div class="em-t-city">Bucaramanga, Colombia</div></div></div></div>
+      <div class="em-t-card"><div class="em-t-stars">★★★★★</div><p class="em-t-text">“Llevé mi Samsung S23 con la pantalla rota y en pocas horas lo tenía como nuevo. Excelente servicio y precio justo.”</p><div class="em-t-author"><div class="em-t-avatar">CR</div><div><div class="em-t-name">Camila Rodríguez</div><div class="em-t-city">Cúcuta, Colombia</div></div></div></div>
+      <div class="em-t-card"><div class="em-t-stars">★★★★★</div><p class="em-t-text">“Muy profesionales. Me explicaron todo el proceso antes de comenzar la reparación. Total confianza desde el primer momento.”</p><div class="em-t-author"><div class="em-t-avatar">AP</div><div><div class="em-t-name">Andrés Patiño</div><div class="em-t-city">Bucaramanga, Colombia</div></div></div></div>
+      <div class="em-t-card"><div class="em-t-stars">★★★★★</div><p class="em-t-text">“El servicio a domicilio me salvó el día. Vinieron rápido y repararon la batería de mi Galaxy sin ningún problema.”</p><div class="em-t-author"><div class="em-t-avatar">LG</div><div><div class="em-t-name">Laura Gómez</div><div class="em-t-city">Cúcuta, Colombia</div></div></div></div>
+      <div class="em-t-card"><div class="em-t-stars">★★★★★</div><p class="em-t-text">“Centro autorizado Samsung, y se nota. Repuestos originales y garantía real. Recomendado al 100%.”</p><div class="em-t-author"><div class="em-t-avatar">JH</div><div><div class="em-t-name">Jorge Hernández</div><div class="em-t-city">Bucaramanga, Colombia</div></div></div></div>
+      <div class="em-t-card"><div class="em-t-stars">★★★★★</div><p class="em-t-text">“Rapidísimos y muy amables. Mi Tab S8 quedó como recién comprada. Definitivamente volvería.”</p><div class="em-t-author"><div class="em-t-avatar">VM</div><div><div class="em-t-name">Valentina Morales</div><div class="em-t-city">Cúcuta, Colombia</div></div></div></div>
+      <div class="em-t-card"><div class="em-t-stars">★★★★★</div><p class="em-t-text">“Tuve un problema con el puerto de carga y lo resolvieron el mismo día. Sin complicaciones, atención de primera.”</p><div class="em-t-author"><div class="em-t-avatar">MT</div><div><div class="em-t-name">Miguel Ángel Torres</div><div class="em-t-city">Bucaramanga, Colombia</div></div></div></div>
+    </div>
+  </div>
+</section>
+<section class="em-faq-section">
+  <div class="em-faq-inner">
+    <div class="em-faq-header reveal">
+      <div class="section-eyebrow" style="display:flex;align-items:center;gap:10px"><span style="width:22px;height:2px;background:#F5C400;border-radius:2px;display:inline-block"></span>Preguntas Frecuentes</div>
+      <h2 class="section-title" style="color:#0A1628">¿Tienes dudas? Nosotros respondemos</h2>
+      <p class="section-subtitle" style="color:#6B86A3">Resolvemos las consultas más frecuentes sobre nuestros servicios. Si no encuentras tu respuesta, escríbenos.</p>
+    </div>
+    <div class="em-faq-grid">
+      <div class="em-faq-list" id="faqList">
+        <div class="em-faq-item open" data-faq="0">
+          <button class="em-faq-q" aria-expanded="true">¿Atienden a domicilio?<span class="em-faq-icon"><i class="ri-arrow-down-s-line"></i></span></button>
+          <div class="em-faq-a"><p>Sí, contamos con servicio a domicilio en Cúcuta y Bucaramanga. Puedes agendar una visita técnica a través de nuestro formulario de contacto o llamándonos directamente.</p></div>
+        </div>
+        <div class="em-faq-item" data-faq="1">
+          <button class="em-faq-q" aria-expanded="false">¿Cuánto demora una reparación?<span class="em-faq-icon"><i class="ri-arrow-down-s-line"></i></span></button>
+          <div class="em-faq-a"><p>El tiempo depende del tipo de reparación. La mayoría de los diagnósticos y reparaciones menores se realizan en el mismo día. Reparaciones más complejas pueden tomar entre 1 y 3 días hábiles.</p></div>
+        </div>
+        <div class="em-faq-item" data-faq="2">
+          <button class="em-faq-q" aria-expanded="false">¿Tienen garantía en el servicio?<span class="em-faq-icon"><i class="ri-arrow-down-s-line"></i></span></button>
+          <div class="em-faq-a"><p>Sí, todos nuestros servicios cuentan con garantía. Las reparaciones tienen una garantía de 90 días por la mano de obra, y los repuestos originales Samsung cuentan con la garantía del fabricante.</p></div>
+        </div>
+        <div class="em-faq-item" data-faq="3">
+          <button class="em-faq-q" aria-expanded="false">¿Sólo trabajan con Samsung?<span class="em-faq-icon"><i class="ri-arrow-down-s-line"></i></span></button>
+          <div class="em-faq-a"><p>Somos centro de servicio autorizado Samsung, por lo que nos especializamos en sus equipos. Sin embargo, también atendemos otras marcas de smartphones, tablets y dispositivos electrónicos.</p></div>
+        </div>
+        <div class="em-faq-item" data-faq="4">
+          <button class="em-faq-q" aria-expanded="false">¿Cómo pido un repuesto original?<span class="em-faq-icon"><i class="ri-arrow-down-s-line"></i></span></button>
+          <div class="em-faq-a"><p>Puedes solicitar repuestos originales Samsung a través de nuestro sitio web, por WhatsApp o visitando cualquiera de nuestros puntos de servicio. Contamos con inventario disponible y también manejamos pedidos especiales.</p></div>
+        </div>
+        <div class="em-faq-item" data-faq="5">
+          <button class="em-faq-q" aria-expanded="false">¿Cuáles son los horarios de atención?<span class="em-faq-icon"><i class="ri-arrow-down-s-line"></i></span></button>
+          <div class="em-faq-a"><p>Atendemos de lunes a viernes de 8:00 a.m. a 6:00 p.m. y los sábados de 9:00 a.m. a 2:00 p.m. Puedes comunicarte con nosotros también por WhatsApp fuera de estos horarios.</p></div>
+        </div>
+      </div>
+      <div class="em-faq-cta reveal">
+        <div class="em-faq-cta-icon"><i class="ri-question-answer-line"></i></div>
+        <h3>¿No encuentras lo que buscas?</h3>
+        <p>Nuestro equipo está listo para resolver cualquier duda. Escríbenos y te respondemos a la brevedad.</p>
+        <a href="https://api.whatsapp.com/send?phone=573142873886" target="_blank" rel="noopener noreferrer" class="em-faq-btn-wa"><i class="ri-whatsapp-line"></i> Escríbenos por WhatsApp</a>
+        <a href="#contacto" class="em-faq-btn-outline"><i class="ri-phone-line"></i> Otras formas de contacto</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-alt" id="sedes">
+  <div style="max-width:1240px;margin:0 auto"><div class="section-head centered reveal"><div class="section-eyebrow">Nuestras Sedes</div><h2 class="section-title">Estamos cerca de ti</h2><p class="section-subtitle">Dos sedes para atenderte con la misma calidad.</p></div></div>
+  <div class="locations-grid">
+    <div class="loc-card reveal">
+      <div class="loc-card-body">
+        <div class="loc-city"><span class="city-pin"><i class="ri-map-pin-line"></i></span>Cúcuta</div>
+        <div class="loc-details">
+          <div class="loc-row"><div class="loc-row-icon"><i class="ri-building-line"></i></div><span>Calle 3 # 2E-64, La Ceiba, Cúcuta</span></div>
+          <div class="loc-row"><div class="loc-row-icon"><i class="ri-phone-line"></i></div><span>314 287 3886 &mdash; 315 296 3886</span></div>
+          <div class="loc-row"><div class="loc-row-icon"><i class="ri-mail-line"></i></div><span id="email-cucuta"></span></div>
+        </div>
+      </div>
+      <div class="loc-map-container"><div id="map-cucuta" class="leaflet-map"></div></div>
+    </div>
+    <div class="loc-card reveal">
+      <div class="loc-card-body">
+        <div class="loc-city"><span class="city-pin"><i class="ri-map-pin-line"></i></span>Bucaramanga</div>
+        <div class="loc-details">
+          <div class="loc-row"><div class="loc-row-icon"><i class="ri-building-line"></i></div><span>Calle 105 # 22-146, Provenza</span></div>
+          <div class="loc-row"><div class="loc-row-icon"><i class="ri-phone-line"></i></div><span>316 051 7180 &mdash; 316 051 7187</span></div>
+          <div class="loc-row"><div class="loc-row-icon"><i class="ri-mail-line"></i></div><span id="email-bga"></span></div>
+        </div>
+      </div>
+      <div class="loc-map-container"><div id="map-bga" class="leaflet-map"></div></div>
+    </div>
+  </div>
+</section>
+<section class="cta-final" id="contacto">
+  <div class="cta-card reveal">
+    <h2>¿Necesitas ayuda con tu electrodoméstico?</h2>
+    <p>Contáctanos y agenda tu servicio hoy. Atención rápida y garantizada.</p>
+    <div class="cta-btns">
+      <a href="https://api.whatsapp.com/send?phone=573142873886" target="_blank" class="btn btn-wa" style="padding:15px 30px;font-size:.95rem"><i class="ri-whatsapp-line"></i> Escríbenos por WhatsApp</a>
+      <a href="tel:+573142873886" class="btn btn-outline" style="padding:15px 30px;font-size:.95rem;color:#fff;border-color:rgba(255,255,255,.2)"><i class="ri-phone-line"></i> Llámanos ahora</a>
+    </div>
+  </div>
+</section>
+<footer class="em-footer">
+  <div class="em-footer-glow" aria-hidden="true"></div>
+  <div class="em-footer-main">
+    <div class="em-footer-cols">
+      <div class="em-footer-col">
+        <div class="em-footer-brand">
+          <a href="#inicio">
+            <img src="logo-transparent.png" alt="E&M Electronic Solutions" class="em-footer-logo-img">
+          </a>
+        </div>
+        <p class="em-footer-desc">Centro de servicio técnico autorizado Samsung. Más de una década cuidando tu hogar en Cúcuta y Bucaramanga.</p>
+        <div class="em-footer-socials">
+          <a href="#" class="em-fsoc" title="Facebook"><i class="ri-facebook-fill"></i></a>
+          <a href="#" class="em-fsoc" title="Instagram"><i class="ri-instagram-line"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=573142873886" target="_blank" rel="noopener noreferrer" class="em-fsoc" title="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+        </div>
+      </div>
+      <div class="em-footer-col">
+        <h3 class="em-footer-col-head">Navegación</h3>
+        <ul class="em-footer-nav">
+          <li><a href="#servicios"><i class="ri-arrow-right-s-line"></i>Servicios</a></li>
+          <li><a href="#nosotros"><i class="ri-arrow-right-s-line"></i>Nosotros</a></li>
+          <li><a href="#galeria"><i class="ri-arrow-right-s-line"></i>Galería</a></li>
+          <li><a href="#productos"><i class="ri-arrow-right-s-line"></i>Productos</a></li>
+          <li><a href="#sedes"><i class="ri-arrow-right-s-line"></i>Sedes</a></li>
+          <li><a href="#contacto"><i class="ri-arrow-right-s-line"></i>Contáctanos</a></li>
+        </ul>
+      </div>
+      <div class="em-footer-col">
+        <h3 class="em-footer-col-head">Sede Cúcuta</h3>
+        <div class="em-footer-rows">
+          <div class="em-footer-row"><span class="em-footer-row-icon"><i class="ri-map-pin-2-line"></i></span><span>Calle 3 # 2E-64, La Ceiba, Cúcuta</span></div>
+          <div class="em-footer-row"><span class="em-footer-row-icon"><i class="ri-phone-line"></i></span><span>314 287 3886 — 315 296 3886</span></div>
+          <div class="em-footer-row"><span class="em-footer-row-icon"><i class="ri-mail-line"></i></span><span>emelectronicsolutions@gmail.com</span></div>
+        </div>
+      </div>
+      <div class="em-footer-col">
+        <h3 class="em-footer-col-head">Sede Bucaramanga</h3>
+        <div class="em-footer-rows">
+          <div class="em-footer-row"><span class="em-footer-row-icon"><i class="ri-map-pin-2-line"></i></span><span>Calle 105 # 22-146, Provenza, Bucaramanga</span></div>
+          <div class="em-footer-row"><span class="em-footer-row-icon"><i class="ri-phone-line"></i></span><span>316 051 7180 — 316 051 7187</span></div>
+          <div class="em-footer-row"><span class="em-footer-row-icon"><i class="ri-mail-line"></i></span><span>emelectronicsolutionsbga@gmail.com</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="em-footer-bottom-bar">
+    <div class="em-footer-bottom">
+      <p>© 2026 E&amp;M Electronic Solutions S.A.S — Todos los derechos reservados</p>
+      <p><i class="ri-award-line"></i> Servicio Técnico Autorizado Samsung</p>
+    </div>
+  </div>
+</footer>
+<a href="https://api.whatsapp.com/send?phone=573142873886" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Escríbenos por WhatsApp">
+  <span class="wa-float-avatar" aria-hidden="true">
+    <img src="mascota-avatar.png" alt="">
+  </span>
+  <span class="wa-float-copy">
+    <strong>WhatsApp</strong>
+    <span>Habla con E&amp;M</span>
+  </span>
+  <span class="wa-float-icon" aria-hidden="true">
+    <i class="ri-whatsapp-line"></i>
+  </span>
+</a>
+
+  <!-- Leaflet JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+  <!-- Page script -->
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* ── Navbar scroll ───────────────────────── */
+  var nav = document.getElementById('mainNav');
+  function onScroll() { nav && nav.classList.toggle('scrolled', window.scrollY > 60); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ── Mobile menu ─────────────────────────── */
+  var toggle      = document.getElementById('navToggle');
+  var drawer      = document.getElementById('navDrawer');
+  var drawerLinks = drawer ? drawer.querySelectorAll('a') : [];
+
+  function openDrawer()  { toggle && toggle.classList.add('open'); drawer && drawer.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeDrawer() { toggle && toggle.classList.remove('open'); drawer && drawer.classList.remove('open'); document.body.style.overflow = ''; }
+
+  if (toggle) toggle.addEventListener('click', function () { drawer && drawer.classList.contains('open') ? closeDrawer() : openDrawer(); });
+  if (drawer) drawer.addEventListener('click', function (e) { if (e.target === drawer) closeDrawer(); });
+  drawerLinks.forEach(function (a) { a.addEventListener('click', closeDrawer); });
+
+  /* ── Hero Carousel ───────────────────────── */
+  var slidesEl = document.getElementById('heroSlides');
+  var dots     = document.querySelectorAll('.cdot');
+  var current  = 0;
+  var total    = dots.length;
+  var autoTimer;
+
+  function goTo(i) {
+    if (!slidesEl || total === 0) return;
+    current = (i + total) % total;
+    slidesEl.style.transform = 'translateX(-' + (current * 100) + '%)';
+    dots.forEach(function (d, idx) { d.classList.toggle('active', idx === current); });
+  }
+  function startAuto() { autoTimer = setInterval(function () { goTo(current + 1); }, 4500); }
+  function stopAuto()  { clearInterval(autoTimer); }
+
+  dots.forEach(function (d) {
+    d.addEventListener('click', function () {
+      stopAuto();
+      goTo(+this.dataset.slide);
+      startAuto();
+    });
+  });
+
+  var touchStartX = 0;
+  if (slidesEl) {
+    slidesEl.addEventListener('touchstart', function (e) { touchStartX = e.touches[0].clientX; }, { passive: true });
+    slidesEl.addEventListener('touchend',   function (e) {
+      var dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) { stopAuto(); goTo(current + (dx < 0 ? 1 : -1)); startAuto(); }
+    });
+  }
+  startAuto();
+
+  /* ── Counter animation ───────────────────── */
+  var statNums = document.querySelectorAll('.stat-num');
+  var countObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      var el     = entry.target;
+      var target = +el.dataset.target;
+      var dur    = 2200;
+      var start  = performance.now();
+      function tick(now) {
+        var p    = Math.min((now - start) / dur, 1);
+        var ease = 1 - Math.pow(1 - p, 3);
+        el.innerHTML = Math.floor(ease * target).toLocaleString('es-CO') + '<span>+</span>';
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      countObs.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  statNums.forEach(function (n) { countObs.observe(n); });
+
+  /* ── Before / After slider ───────────────── */
+  var baSlider  = document.getElementById('baSlider');
+  var baBefore  = document.getElementById('baBefore');
+  var baKnob    = document.getElementById('baKnob');
+  var baDivider = document.getElementById('baDivider');
+  var baDragging = false;
+
+  function updateBA(clientX) {
+    if (!baSlider || !baBefore || !baKnob || !baDivider) return;
+    var rect = baSlider.getBoundingClientRect();
+    var pct  = Math.max(8, Math.min(92, ((clientX - rect.left) / rect.width) * 100));
+    baBefore.style.width  = pct + '%';
+    baKnob.style.left     = pct + '%';
+    baDivider.style.left  = pct + '%';
+  }
+
+  if (baSlider) {
+    baSlider.addEventListener('mousedown',  function (e) { baDragging = true;  updateBA(e.clientX); });
+    baSlider.addEventListener('touchstart', function (e) { baDragging = true;  updateBA(e.touches[0].clientX); }, { passive: true });
+  }
+  window.addEventListener('mousemove',  function (e) { if (baDragging) updateBA(e.clientX); });
+  window.addEventListener('mouseup',    function ()  { baDragging = false; });
+  window.addEventListener('touchmove',  function (e) { if (baDragging) updateBA(e.touches[0].clientX); }, { passive: true });
+  window.addEventListener('touchend',   function ()  { baDragging = false; });
+
+  /* ── Product tabs ────────────────────────── */
+  document.querySelectorAll('.prod-tab').forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      document.querySelectorAll('.prod-tab').forEach(function (t)  { t.classList.remove('active'); });
+      document.querySelectorAll('.prod-panel').forEach(function (p) { p.classList.remove('active'); });
+      tab.classList.add('active');
+      var panel = document.getElementById('panel-' + tab.dataset.tab);
+      if (panel) panel.classList.add('active');
+    });
+  });
+
+  /* ── Leaflet Maps ────────────────────────── */
+  var mapStyle = document.createElement('style');
+  mapStyle.textContent = [
+    '.em-tooltip{background:#fff;border:1px solid #E4EEF6;border-radius:10px;',
+    'padding:8px 12px;font-family:"Plus Jakarta Sans",sans-serif;',
+    'font-size:12px;color:#0A1628;box-shadow:0 4px 16px rgba(10,22,40,.1);',
+    'pointer-events:none;white-space:nowrap;}',
+    '.em-tooltip b{color:#0057B8;display:block;margin-bottom:2px;}',
+    '.em-tooltip small{color:#6B86A3;}',
+    '.leaflet-container{cursor:pointer;}'
+  ].join('');
+  document.head.appendChild(mapStyle);
+
+  var locations = [
+    { id:'map-cucuta', lat:7.9003,  lng:-72.5078, label:'E&M Solutions — Cúcuta',
+      addr:'Calle 3 # 2E-64, La Ceiba, Cúcuta',
+      url:'https://maps.app.goo.gl/xhR8iWv9KPayTdfC8' },
+    { id:'map-bga',    lat:7.1197,  lng:-73.1167, label:'E&M Solutions — Bucaramanga',
+      addr:'Calle 105 # 22-146, Provenza, Bucaramanga',
+      url:'https://maps.app.goo.gl/juoGY4gmNRM1dJ9v5' }
+  ];
+
+  var pinIcon = L.divIcon({
+    html: '<div style="width:38px;height:38px;background:#0057B8;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:3px solid #fff;box-shadow:0 4px 14px rgba(0,87,184,.45);display:flex;align-items:center;justify-content:center;"><span style="transform:rotate(45deg);color:#F5C400;font-size:15px;line-height:1;">⚡</span></div>',
+    iconSize:[38,38], iconAnchor:[19,38], className:''
+  });
+
+  locations.forEach(function (loc) {
+    var container = document.getElementById(loc.id);
+    if (!container) return;
+    var map = L.map(container, { zoomControl: true, scrollWheelZoom: false });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    var marker = L.marker([loc.lat, loc.lng], { icon: pinIcon }).addTo(map);
+    marker.on('click', function () { window.open(loc.url, '_blank'); });
+    map.on('click',    function () { window.open(loc.url, '_blank'); });
+    marker.bindTooltip(
+      L.tooltip({ permanent:true, direction:'top', offset:[0,-40], className:'em-tooltip' })
+       .setContent('<b>' + loc.label + '</b><br><small>' + loc.addr + '</small>')
+    );
+    map.setView([loc.lat, loc.lng], 15);
+  });
+
+  /* ── Reveal on scroll ────────────────────── */
+  var revealObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function () { entry.target.classList.add('vis'); }, i * 75);
+        revealObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.reveal').forEach(function (el) { revealObs.observe(el); });
+
+  /* ── Emails (anti-spam) ──────────────────── */
+  var elC = document.getElementById('email-cucuta');
+  var elB = document.getElementById('email-bga');
+  if (elC) elC.textContent = ['emelectronicsolutions',   'gmail.com'].join('@');
+  if (elB) elB.textContent = ['emelectronicsolutionsbga','gmail.com'].join('@');
+
+  /* ── FAQ Accordion ───────────────────────── */
+  var faqItems = document.querySelectorAll('.em-faq-item');
+  faqItems.forEach(function (item) {
+    var btn = item.querySelector('.em-faq-q');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var isOpen = item.classList.contains('open');
+      faqItems.forEach(function (fi) {
+        fi.classList.remove('open');
+        var q = fi.querySelector('.em-faq-q');
+        if (q) q.setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  /* ── Nav Pill scroll-collapse ────────────── */
+  var pillContainer = document.getElementById('navPillContainer');
+  var pillToggle    = document.getElementById('navPillToggle');
+  var pillLastY     = window.scrollY;
+  var pillCollapseY = 0;
+  var pillCollapsed = false;
+
+  window.addEventListener('scroll', function () {
+    var y = window.scrollY;
+    if (!pillCollapsed && y > 150 && y > pillLastY) {
+      if (pillContainer) pillContainer.classList.add('is-pill');
+      pillCollapsed = true;
+      pillCollapseY = y;
+    } else if (pillCollapsed && y < pillCollapseY - 80) {
+      if (pillContainer) pillContainer.classList.remove('is-pill');
+      pillCollapsed = false;
+    }
+    pillLastY = y;
+  }, { passive: true });
+
+  if (pillToggle) {
+    pillToggle.addEventListener('click', function () {
+      if (pillContainer) pillContainer.classList.remove('is-pill');
+      pillCollapsed = false;
+    });
+  }
+
+  /* ── Hero word rotator ─────────────────── */
+  var rotWords   = document.querySelectorAll('.hero-word');
+  var rotCurrent = 0;
+  if (rotWords.length > 1) {
+    setInterval(function () {
+      var prev = rotCurrent;
+      rotCurrent = (rotCurrent + 1) % rotWords.length;
+      rotWords[prev].classList.remove('active');
+      rotWords[prev].classList.add('exiting');
+      (function (el) { setTimeout(function () { el.classList.remove('exiting'); }, 560); })(rotWords[prev]);
+      rotWords[rotCurrent].classList.add('active');
+    }, 2500);
+  }
+
+});
+  </script>
+</body>
+</html>
